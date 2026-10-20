@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>棧板智慧排板系統 v1.4 使用說明</title>
+<title>棧板智慧排板系統 v1.5 使用說明</title>
 <style>
 :root{--bg:#f6f7f9;--ink:#1c2733;--soft:#5b6b7a;--line:#d9e0e7;--card:#fff;--hi:#fff4d6}
 @media (prefers-color-scheme:dark){:root{--bg:#14191f;--ink:#e7edf3;--soft:#9fb0c0;--line:#2d3945;--card:#1b232c;--hi:#3a3316}}
@@ -9,17 +9,26 @@ main{max-width:820px;margin:0 auto}h1{font-size:22px;margin:0 0 4px}h2{font-size
 p,li{font-size:15px}.soft{color:var(--soft)}.box{background:var(--card);border:1px solid var(--line);padding:10px 14px;margin:10px 0}.hi{background:var(--hi)}
 code{background:var(--card);border:1px solid var(--line);padding:0 5px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 </style></head><body><main>
-<h1>棧板智慧排板系統 v1.4 使用說明</h1>
-<p class="soft">2026-10-20 版。不用安裝、不用網路，把 <code>棧板排板系統_v1.4.html</code> 用瀏覽器打開就能用。</p>
+<h1>棧板智慧排板系統 v1.5 使用說明</h1>
+<p class="soft">2026-10-20 版。不用安裝、不用網路，把 <code>棧板排板系統_v1.5.html</code> 用瀏覽器打開就能用。</p>
 
 <h2>一、怎麼打開</h2>
 <ul>
-<li>對 <code>棧板排板系統_v1.4.html</code> 按兩下，或用滑鼠右鍵選「開啟方式」→ Chrome／Edge。</li>
+<li>對 <code>棧板排板系統_v1.5.html</code> 按兩下，或用滑鼠右鍵選「開啟方式」→ Chrome／Edge。</li>
 <li>如果是 360 瀏覽器，請用「極速模式」（不是「相容模式」），並開啟硬體加速，3D 立體圖才看得到。看不到 3D 時系統會自動改成俯視圖，其他功能不受影響。</li>
 <li>所有計算都在你的電腦上做，資料不會送到網路上。關掉分頁，沒有存檔的內容就沒了；要保留請下載 Excel。</li>
 </ul>
 
-<div class="box hi"><p><b>v1.4 更新內容（相對於 v1.3）</b></p>
+<div class="box hi"><p><b>v1.5 更新內容（相對於 v1.4）</b></p>
+<ul>
+<li><b>畫面用橘色線標出邊條的位置</b>：3D 立體圖和俯視分區圖上的橘色粗線＝系統認為邊條打的位置（目前假設在前後兩面、沿長邊）。<b>如果位置不對，請告訴我們邊條實際打在哪兩個面</b>，我們會依此修正排法與檢查。</li>
+<li><b>邊條要壓得穩</b>：邊條那條線上要有箱子托著，中間不可以有空隙（最外端不算）；補平用的箱子會貼向外側、貼住旁邊的柱子。</li>
+<li><b>排得更省</b>：平台少疊一層、剩下的箱子鋪成一整片大上層也列入考慮（以前尾數太多就不考慮）；上層箱子排好之後會再推到托得最滿的位置，減少懸空。</li>
+<li><b>排板精細度</b>：「開始排板」旁邊可選標準（600 次評分）、精細（1200 次）、最精細（2400 次）。次數越多，找到的排法越省、花的時間越長；結果只跟次數有關，不隨電腦快慢改變。旁邊會顯示預估時間：還沒排過時只說「約為標準的幾倍」，排完一次後會用實際花的秒數換算。預設是標準。</li>
+<li>提醒：精細版有時面積更小但棧板數反而多一塊（例如 Hammond 標準 7 板、精細 8 板），系統的目標是總面積最小，不是板數最少。</li>
+</ul></div>
+
+<div class="box"><p><b>v1.4 更新內容（相對於 v1.3）</b></p>
 <ul>
 <li>手動搬箱經過嚴格測試（用各版本檔案與模擬單，把每個料號搬 1 箱、一半、全部到每一塊別的板或新板，共約 2,700 種搬法），修正了「明明排得出來卻被拒絕」的情況：備用的寬鬆排法試的次數加大了。</li>
 <li>搬不過去時，絕大多數是毛重超過上限或接近上限，其次是超過總高上限；畫面會用白話寫出數字。</li>
@@ -98,5 +107,5 @@ code{background:var(--card);border:1px solid var(--line);padding:0 5px}table{bor
 <li>輸出的發票／箱單格式有沒有跟你們現在用的不一樣？</li></ol>
 <p>回報時請附上：<b>畫面截圖（含棧板編號）</b>＋<b>使用的 Excel 檔</b>，我們可以在同樣條件重現。</p></div>
 
-<p class="soft">版本 v1.4（2026-10-20）。畫面左上角「棧板智慧排板系統」旁邊有目前的版本與建置時間。</p>
+<p class="soft">版本 v1.5（2026-10-20）。畫面左上角「棧板智慧排板系統」旁邊有目前的版本與建置時間。</p>
 </main></body></html>

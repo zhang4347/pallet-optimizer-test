@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>棧板智慧排板系統 v2.1 使用說明</title>
+<title>棧板智慧排板系統 v2.2 使用說明</title>
 <style>
 :root{--bg:#f6f7f9;--ink:#1c2733;--soft:#5b6b7a;--line:#d9e0e7;--card:#fff;--hi:#fff4d6}
 @media (prefers-color-scheme:dark){:root{--bg:#14191f;--ink:#e7edf3;--soft:#9fb0c0;--line:#2d3945;--card:#1b232c;--hi:#3a3316}}
@@ -9,17 +9,24 @@ main{max-width:820px;margin:0 auto}h1{font-size:22px;margin:0 0 4px}h2{font-size
 p,li{font-size:15px}.soft{color:var(--soft)}.box{background:var(--card);border:1px solid var(--line);padding:10px 14px;margin:10px 0}.hi{background:var(--hi)}
 code{background:var(--card);border:1px solid var(--line);padding:0 5px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 </style></head><body><main>
-<h1>棧板智慧排板系統 v2.1 使用說明</h1>
-<p class="soft">2026-10-30 版。不用安裝、不用網路，把 <code>棧板排板系統_v2.1.html</code> 用瀏覽器打開就能用。</p>
+<h1>棧板智慧排板系統 v2.2 使用說明</h1>
+<p class="soft">2026-10-31 版。不用安裝、不用網路，把 <code>棧板排板系統_v2.2.html</code> 用瀏覽器打開就能用。</p>
 
 <h2>一、怎麼打開</h2>
 <ul>
-<li>對 <code>棧板排板系統_v2.1.html</code> 按兩下，或用滑鼠右鍵選「開啟方式」→ Chrome／Edge。</li>
+<li>對 <code>棧板排板系統_v2.2.html</code> 按兩下，或用滑鼠右鍵選「開啟方式」→ Chrome／Edge。</li>
 <li>如果是 360 瀏覽器，請用「極速模式」（不是「相容模式」），並開啟硬體加速，3D 立體圖才看得到。看不到 3D 時系統會自動改成俯視圖，其他功能不受影響。</li>
 <li>所有計算都在你的電腦上做，資料不會送到網路上。關掉分頁，沒有存檔的內容就沒了；要保留請下載 Excel。</li>
 </ul>
 
-<div class="box hi"><p><b>v2.1 更新內容（相對於 v2.0）</b></p>
+<div class="box hi"><p><b>v2.2 更新內容（相對於 v2.1）</b></p>
+<ul>
+<li><b>匯入 Excel 時，表頭上面可以有標題列了</b>：以前如果出貨明細的欄名（料號、出貨數量、PO…）上面多了一列標題文字（例如「出貨單 2026/10/22」），PO 欄會讀不到，發票上的 PO 變成空白；標題文字剛好含「日期」「單價」「數量」這類字時，別的欄也會讀錯。現在整列只有同一段文字的標題（一格，或整列合併）會自動略過，PO 與其他欄位都讀得到。</li>
+<li>其他沒有改變：排板規則、排法、檢核、畫面、單據與 v2.1 相同。我們用原有的客戶檔案（Hammond、MCI、各版排板主檔、範本）改前改後逐項比對，讀出來的內容完全一樣。</li>
+<li>小提醒：如果標題列同一列裡有好幾格不同的文字（例如左邊「出貨單」、右邊「日期：10/22」），而且文字含有欄名的字，建議把標題移到表格上方再空一列，或改成一格一整列。</li>
+</ul></div>
+
+<div class="box"><p><b>v2.1 更新內容（相對於 v2.0）</b></p>
 <ul>
 <li><b>排得更省</b>：排板時，選出最好的結果之後，會再用「深度比寬度長的板也列入」的方式從它接著找一次，只接受更省的變動。以前有些兩塊板其實可以合成一塊（例如寬 80、深 93 的板），系統沒有找到。我們的 55 張測試單，<b>沒有任何一張變差</b>，5 張變好：客戶 10/02 的測試檔從 5 板 2.81 m² 變成 <b>4 板 2.60 m²</b>（少 7.3%），另外 4 張少 0.8%～3.4%。排板時間幾乎沒有增加。</li>
 <li>其他沒有改變：規則、檢核、畫面、單據與 v2.0 相同。</li>
@@ -152,5 +159,5 @@ code{background:var(--card);border:1px solid var(--line);padding:0 5px}table{bor
 <li>輸出的發票／箱單格式有沒有跟你們現在用的不一樣？</li></ol>
 <p>回報時請附上：<b>畫面截圖（含棧板編號）</b>＋<b>使用的 Excel 檔</b>，我們可以在同樣條件重現。</p></div>
 
-<p class="soft">版本 v2.1（2026-10-30）。畫面左上角「棧板智慧排板系統」旁邊有目前的版本與建置時間。</p>
+<p class="soft">版本 v2.2（2026-10-31）。畫面左上角「棧板智慧排板系統」旁邊有目前的版本與建置時間。</p>
 </main></body></html>
